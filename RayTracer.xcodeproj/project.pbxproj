@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A328616121E01CA600858C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328616021E01CA600858C0B /* AppDelegate.swift */; };
+		A328616321E01CA600858C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328616221E01CA600858C0B /* ViewController.swift */; };
+		A328616621E01CA600858C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A328616421E01CA600858C0B /* Main.storyboard */; };
+		A328616821E01CA700858C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A328616721E01CA700858C0B /* Assets.xcassets */; };
+		A328616B21E01CA700858C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A328616921E01CA700858C0B /* LaunchScreen.storyboard */; };
+		A328617F21E0E1D700858C0B /* RayTracer_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A328617D21E0E1D700858C0B /* RayTracer_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A328618221E0E1D700858C0B /* RayTracer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */; };
+		A328618321E0E1D700858C0B /* RayTracer_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A328618821E0E1E000858C0B /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328617421E046E400858C0B /* UIKitExtensions.swift */; };
+		A328618921E0E1E500858C0B /* RayTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328617221E01CC400858C0B /* RayTracer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A328618021E0E1D700858C0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A328615521E01CA600858C0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A328617A21E0E1D700858C0B;
+			remoteInfo = "RayTracer iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A328618721E0E1D700858C0B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A328618321E0E1D700858C0B /* RayTracer_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A328615D21E01CA600858C0B /* RayTracer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayTracer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A328616021E01CA600858C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A328616221E01CA600858C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A328616521E01CA600858C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A328616721E01CA700858C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A328616A21E01CA700858C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A328616C21E01CA700858C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A328617221E01CC400858C0B /* RayTracer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayTracer.swift; sourceTree = "<group>"; };
+		A328617421E046E400858C0B /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RayTracer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A328617D21E0E1D700858C0B /* RayTracer_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RayTracer_iOS.h; sourceTree = "<group>"; };
+		A328617E21E0E1D700858C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A328615A21E01CA600858C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A328618221E0E1D700858C0B /* RayTracer_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A328617821E0E1D700858C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A328615421E01CA600858C0B = {
+			isa = PBXGroup;
+			children = (
+				A328615F21E01CA600858C0B /* RayTracer */,
+				A328617C21E0E1D700858C0B /* RayTracer iOS */,
+				A328615E21E01CA600858C0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A328615E21E01CA600858C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A328615D21E01CA600858C0B /* RayTracer.app */,
+				A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A328615F21E01CA600858C0B /* RayTracer */ = {
+			isa = PBXGroup;
+			children = (
+				A328616021E01CA600858C0B /* AppDelegate.swift */,
+				A328616221E01CA600858C0B /* ViewController.swift */,
+				A328616421E01CA600858C0B /* Main.storyboard */,
+				A328616721E01CA700858C0B /* Assets.xcassets */,
+				A328616921E01CA700858C0B /* LaunchScreen.storyboard */,
+				A328616C21E01CA700858C0B /* Info.plist */,
+			);
+			path = RayTracer;
+			sourceTree = "<group>";
+		};
+		A328617C21E0E1D700858C0B /* RayTracer iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A328617221E01CC400858C0B /* RayTracer.swift */,
+				A328617421E046E400858C0B /* UIKitExtensions.swift */,
+				A328617D21E0E1D700858C0B /* RayTracer_iOS.h */,
+				A328617E21E0E1D700858C0B /* Info.plist */,
+			);
+			path = "RayTracer iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A328617621E0E1D700858C0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A328617F21E0E1D700858C0B /* RayTracer_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A328615C21E01CA600858C0B /* RayTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A328616F21E01CA700858C0B /* Build configuration list for PBXNativeTarget "RayTracer" */;
+			buildPhases = (
+				A328615921E01CA600858C0B /* Sources */,
+				A328615A21E01CA600858C0B /* Frameworks */,
+				A328615B21E01CA600858C0B /* Resources */,
+				A328618721E0E1D700858C0B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A328618121E0E1D700858C0B /* PBXTargetDependency */,
+			);
+			name = RayTracer;
+			productName = RayTracer;
+			productReference = A328615D21E01CA600858C0B /* RayTracer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A328617A21E0E1D700858C0B /* RayTracer iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A328618421E0E1D700858C0B /* Build configuration list for PBXNativeTarget "RayTracer iOS" */;
+			buildPhases = (
+				A328617621E0E1D700858C0B /* Headers */,
+				A328617721E0E1D700858C0B /* Sources */,
+				A328617821E0E1D700858C0B /* Frameworks */,
+				A328617921E0E1D700858C0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RayTracer iOS";
+			productName = "RayTracer iOS";
+			productReference = A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A328615521E01CA600858C0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Bluenose;
+				TargetAttributes = {
+					A328615C21E01CA600858C0B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A328617A21E0E1D700858C0B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = A328615821E01CA600858C0B /* Build configuration list for PBXProject "RayTracer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A328615421E01CA600858C0B;
+			productRefGroup = A328615E21E01CA600858C0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A328615C21E01CA600858C0B /* RayTracer */,
+				A328617A21E0E1D700858C0B /* RayTracer iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A328615B21E01CA600858C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A328616B21E01CA700858C0B /* LaunchScreen.storyboard in Resources */,
+				A328616821E01CA700858C0B /* Assets.xcassets in Resources */,
+				A328616621E01CA600858C0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A328617921E0E1D700858C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A328615921E01CA600858C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A328616321E01CA600858C0B /* ViewController.swift in Sources */,
+				A328616121E01CA600858C0B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A328617721E0E1D700858C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A328618821E0E1E000858C0B /* UIKitExtensions.swift in Sources */,
+				A328618921E0E1E500858C0B /* RayTracer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A328618121E0E1D700858C0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A328617A21E0E1D700858C0B /* RayTracer iOS */;
+			targetProxy = A328618021E0E1D700858C0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A328616421E01CA600858C0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A328616521E01CA600858C0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A328616921E01CA700858C0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A328616A21E01CA700858C0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A328616D21E01CA700858C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A328616E21E01CA700858C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A328617021E01CA700858C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RayTracer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluenose.RayTracer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A328617121E01CA700858C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RayTracer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluenose.RayTracer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A328618521E0E1D700858C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RayTracer iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluenose.RayTracer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A328618621E0E1D700858C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RayTracer iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluenose.RayTracer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A328615821E01CA600858C0B /* Build configuration list for PBXProject "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A328616D21E01CA700858C0B /* Debug */,
+				A328616E21E01CA700858C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A328616F21E01CA700858C0B /* Build configuration list for PBXNativeTarget "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A328617021E01CA700858C0B /* Debug */,
+				A328617121E01CA700858C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A328618421E0E1D700858C0B /* Build configuration list for PBXNativeTarget "RayTracer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A328618521E0E1D700858C0B /* Debug */,
+				A328618621E0E1D700858C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A328615521E01CA600858C0B /* Project object */;
+}
