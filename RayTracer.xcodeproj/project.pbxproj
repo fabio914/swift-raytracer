@@ -56,6 +56,7 @@
 		A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RayTracer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A328617D21E0E1D700858C0B /* RayTracer_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RayTracer_iOS.h; sourceTree = "<group>"; };
 		A328617E21E0E1D700858C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF05AEFC21E0EABE000A1933 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		A328615421E01CA600858C0B = {
 			isa = PBXGroup;
 			children = (
+				EF05AEFC21E0EABE000A1933 /* README.md */,
 				A328615F21E01CA600858C0B /* RayTracer */,
 				A328617C21E0E1D700858C0B /* RayTracer iOS */,
 				A328615E21E01CA600858C0B /* Products */,
