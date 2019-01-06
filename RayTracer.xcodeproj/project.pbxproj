@@ -17,6 +17,7 @@
 		A328618321E0E1D700858C0B /* RayTracer_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A328617B21E0E1D700858C0B /* RayTracer_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A328618821E0E1E000858C0B /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328617421E046E400858C0B /* UIKitExtensions.swift */; };
 		A328618921E0E1E500858C0B /* RayTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328617221E01CC400858C0B /* RayTracer.swift */; };
+		EF05AEFE21E26DD5000A1933 /* IntersectionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05AEFD21E26DD5000A1933 /* IntersectionTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A328617D21E0E1D700858C0B /* RayTracer_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RayTracer_iOS.h; sourceTree = "<group>"; };
 		A328617E21E0E1D700858C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF05AEFC21E0EABE000A1933 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EF05AEFD21E26DD5000A1933 /* IntersectionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				A328617221E01CC400858C0B /* RayTracer.swift */,
+				EF05AEFD21E26DD5000A1933 /* IntersectionTree.swift */,
 				A328617421E046E400858C0B /* UIKitExtensions.swift */,
 				A328617D21E0E1D700858C0B /* RayTracer_iOS.h */,
 				A328617E21E0E1D700858C0B /* Info.plist */,
@@ -245,6 +248,7 @@
 			files = (
 				A328618821E0E1E000858C0B /* UIKitExtensions.swift in Sources */,
 				A328618921E0E1E500858C0B /* RayTracer.swift in Sources */,
+				EF05AEFE21E26DD5000A1933 /* IntersectionTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

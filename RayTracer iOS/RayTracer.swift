@@ -2,6 +2,7 @@ import Foundation
 
 struct Definitions {
     static let infinity = Double.greatestFiniteMagnitude - 1.0
+    static let negativeInfinity = -(Definitions.infinity)
 }
 
 public struct Vector: Codable {
@@ -10,6 +11,8 @@ public struct Vector: Codable {
     var z: Double
     
     public static let zero = Vector()
+    static let infinity = Vector(all: Definitions.infinity)
+    static let negativeInfinity = Vector(all: Definitions.negativeInfinity)
     
     var norm: Double {
         return sqrt(normSquared)
@@ -27,6 +30,10 @@ public struct Vector: Codable {
         self.x = x
         self.y = y
         self.z = z
+    }
+    
+    init(all: Double) {
+        self.init(x: all, y: all, z: all)
     }
     
     init(start: Vector, end: Vector) {
@@ -156,10 +163,6 @@ public struct Color: Codable {
         self.blue = min(255, max(0, blue))
     }
     
-    func average(with color: Color) -> Color {
-        return .init(red: (self.red + color.red)/2.0, green: (self.green + color.green)/2.0, blue: (self.blue + color.blue)/2.0)
-    }
-    
     static func *(lhs: Color, rhs: Double) -> Color {
         return .init(red: lhs.red * rhs, green: lhs.green * rhs, blue: lhs.blue * rhs)
     }
@@ -174,6 +177,24 @@ public struct Color: Codable {
     
     static func *(lhs: Color, rhs: Component) -> Color {
         return .init(red: lhs.red * rhs.red, green: lhs.green * rhs.green, blue: lhs.blue * rhs.blue)
+    }
+}
+
+extension Array where Element == Color {
+    
+    var average: Color {
+        guard count > 0 else { return .black }
+        var red = 0.0
+        var green = 0.0
+        var blue = 0.0
+        
+        for color in self {
+            red += color.red
+            green += color.green
+            blue += color.blue
+        }
+        
+        return Color(red: red/Double(count), green: green/Double(count), blue: blue/Double(count))
     }
 }
 
@@ -693,20 +714,20 @@ public struct RayTracer {
                 let coordinates = Coordinates(x: x, y: y)
                 var yPart = -0.75
                 var xPart = -0.75
-                var temporaryColor = Color.black
+                var colors = [Color]()
                 
                 while yPart < 1.0 {
                     while xPart < 1.0 {
                         let coordinates = Coordinates(x: x + xPart, y: y + yPart)
                         let ray = shooter.ray(for: coordinates)
-                        temporaryColor = temporaryColor.average(with: trace(ray: ray))
+                        colors.append(trace(ray: ray))
                         xPart += 0.5
                     }
                     
                     yPart += 0.5
                 }
                 
-                canvas.set(pixel: temporaryColor.gammaCorrected, at: coordinates)
+                canvas.set(pixel: colors.average.gammaCorrected, at: coordinates)
                 x += 1.0
             }
             
@@ -746,6 +767,5 @@ public struct RayTracer {
         // TODO
         
         return (localColor * ray.energy) + (reflectionColor * reflectedRay.energy)
-//        return (localColor * ray.energy).average(with: (reflectionColor * reflectedRay.energy))
     }
 }
